@@ -1,3 +1,0 @@
-SELECT _ TOP 8100 *
-FROM Subject s
-WHERE s.Del = 0
