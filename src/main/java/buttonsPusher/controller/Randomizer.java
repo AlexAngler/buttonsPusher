@@ -5,13 +5,13 @@ import java.util.Random;
 public class Randomizer {
     public static int getRandomValue(String minValue, String maxValue) {
         int min = 2;
-        int max = 30;
+        int max = 20;
 
         try {
             min = Integer.parseInt(minValue);
             max = Integer.parseInt(maxValue);
         } catch (NumberFormatException e) {
-            System.err.println("Ошибка перобразования в int.");
+            System.err.println("Ошибка перобразованIия в int.");
         }
         min = min * 1000;
         max = max * 1000;
