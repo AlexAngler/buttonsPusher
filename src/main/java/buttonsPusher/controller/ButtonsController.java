@@ -26,6 +26,12 @@ public class ButtonsController {
 
         this.robot.delay(delay);
 
+        if (buttonNumber == 13) {
+            this.robot.keyPress(KeyEvent.VK_ENTER);
+            this.robot.keyRelease(KeyEvent.VK_ENTER);
+            return;
+        }
+
         if (Character.isUpperCase(buttonNumber)) {
             this.robot.keyPress(KeyEvent.VK_SHIFT);
         }
@@ -35,7 +41,7 @@ public class ButtonsController {
             buttonNumber = specialSymbols.get(buttonNumber);
         }
 
-        buttonNumber = KeyEvent.getExtendedKeyCodeForChar(buttonNumber);
+            buttonNumber = KeyEvent.getExtendedKeyCodeForChar(buttonNumber);
 
         this.robot.keyPress(buttonNumber);
         this.robot.keyRelease(buttonNumber);
