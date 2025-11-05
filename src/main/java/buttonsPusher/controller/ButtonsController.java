@@ -19,6 +19,9 @@ public class ButtonsController {
         Map<Integer, Integer> specialSymbols = new HashMap<>();
         specialSymbols.put(42, 56); // * - 8
         specialSymbols.put(95, 45); // _ - -
+        specialSymbols.put(40, 57); // ( - 9
+        specialSymbols.put(41, 48); // ) - 0
+        specialSymbols.put(35, 51); // # - 3
 
 
         this.robot.delay(delay);
